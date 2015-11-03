@@ -52,7 +52,11 @@ if ($_SESSION["owasp"][4] == false){
 			if ($_GET["newpass"] == 1){
 				echo '<div>Changing administrator account password is not activated</div>';
 			}else{
-				mysql_query("UPDATE owasp_4_users SET pass = '$_POST[pass]' WHERE id = '$_GET[newpass]'");		
+				mysql_query("UPDATE owasp_4_users SET pass = '$_POST[pass]' WHERE id = '$_GET[newpass]'");	
+				$sql=mysql_query("SELECT * FROM owasp_4_users WHERE id = '$_GET[newpass]'",$con);
+				while($row = mysql_fetch_array($sql)){
+					echo 'Password for '.$row["name"].' changed successfully';
+				}	
 			}
 			
 		}else{

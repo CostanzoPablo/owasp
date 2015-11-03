@@ -70,13 +70,6 @@ CREATE TABLE IF NOT EXISTS `owasp_3_comments` (
   `comment` text NOT NULL
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
 
---
--- Dumping data for table `owasp_3_comments`
---
-
-INSERT INTO `owasp_3_comments` (`id`, `comment`) VALUES
-(2, '<font color="#FF6600">:D</font>');
-
 -- --------------------------------------------------------
 
 --
@@ -89,17 +82,6 @@ CREATE TABLE IF NOT EXISTS `owasp_3_users` (
   `likes` int(11) DEFAULT '0',
   `ip` text NOT NULL
 ) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `owasp_3_users`
---
-
-INSERT INTO `owasp_3_users` (`id`, `name`, `likes`, `ip`) VALUES
-(2, 'PepitO', 2, ''),
-(3, 'Pepito2', 1, ''),
-(4, 'Pepito3', 0, ''),
-(5, 'Pepito4', 0, ''),
-(6, 'JOJO', 1, '127.0.0.1');
 
 -- --------------------------------------------------------
 
