@@ -1,9 +1,10 @@
 # owasp
 
 	DOWNLOAD
-		tutum/lamp Docker / Lamp configuration from https://github.com/tutumcloud/lamp
-		move all files form tutum/lamp to owasp directory
-	
+	tutum/lamp Docker / Lamp configuration
+		
+		git clone https://github.com/tutumcloud/lamp
+
 	RUN
 		docker build -no-cache -t tutum/lamp .
 		service apache2 stop
