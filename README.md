@@ -1,5 +1,9 @@
 # owasp
 
+	DOWNLOAD
+		tutum/lamp Docker / Lamp configuration from https://github.com/tutumcloud/lamp
+		move all files form tutum/lamp to owasp directory
+	
 	RUN
 		docker build -no-cache -t tutum/lamp .
 		docker run -d -p 80:80 -p 3306:3306 tutum/lamp
