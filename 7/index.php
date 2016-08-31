@@ -1,4 +1,7 @@
 <?php
+echo '<div style="width:30%;height:200px;">
+Missing Function Level Access Control
+</div>';
 //Missing_Function_Level_Access_Control
 
 //mostrar un login y luego se puede .. "postear algo"

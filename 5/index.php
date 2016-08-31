@@ -1,4 +1,7 @@
 <?php
+echo '<div style="width:30%;height:200px;">
+Flag Security Misconfiguration
+</div>';
 //Security_Misconfiguration
 
 //Default acc.
@@ -23,7 +26,7 @@ switch ($_GET["section"]) {
 			echo 'Acces Restricted
 			<form method="post" action="./index.php?section=admin">
 				<input type="text" name="name" placeholder="Name"><br>
-				<input type="password" name="pass" placeholder="Password"><br>
+				<input type="password" name="pass" placeholder="Password" min="8"><br>
 				<input type="submit" value="LOG IN">
 			</form>';	
 		}

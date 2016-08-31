@@ -1,4 +1,7 @@
 <?php
+echo '<div style="width:30%;height:200px;">
+Flag Broken Authentication (admin:admin)
+</div>';
 //Broken_Authentication
 	//url editing session_id
 include('../connect.php');

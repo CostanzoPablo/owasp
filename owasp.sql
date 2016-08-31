@@ -56,7 +56,7 @@ CREATE TABLE IF NOT EXISTS `owasp_2_users` (
 --
 
 INSERT INTO `owasp_2_users` (`id`, `name`, `pass`) VALUES
-(1, 'admin', 'admiN'),
+(1, 'admin', 'admin'),
 (2, 'Flag2 UNLOCKED', 'unPassWorD');
 
 -- --------------------------------------------------------
@@ -101,8 +101,8 @@ CREATE TABLE IF NOT EXISTS `owasp_4_users` (
 --
 
 INSERT INTO `owasp_4_users` (`id`, `name`, `pass`, `salary`) VALUES
-(1, 'admin', 'admiN', '$ 10.000 (SECRET)'),
-(2, 'user', '123456', '$ 30.000 (FLAG UNLOCKED)');
+(1, 'admin', 'admin', '$ 10.000 (SECRET)'),
+(2, 'user', '1234569!', '$ 30.000 (FLAG UNLOCKED)');
 
 -- --------------------------------------------------------
 

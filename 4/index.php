@@ -1,5 +1,8 @@
 <?php
 session_start();
+echo '<div style="width:30%;height:200px;">
+Flag Insecure Direct Object References
+</div>';
 //Insecure_Direct_Object_References
 
 	//Permite editar por url el ID del cliente, y asi leer carros de compras... 

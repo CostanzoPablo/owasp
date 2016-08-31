@@ -1,4 +1,9 @@
 <?php
+echo '<div style="width:30%;height:200px;">
+Flag 1 Sensitive Data Exposure
+<br>
+Flag 2 Weak encryption
+</div>';
 //Sensitive_Data_Exposure
 
 //Ejemplos... Algun sitio... Luego Twitter encriptado pero simple y ahora Fibertel

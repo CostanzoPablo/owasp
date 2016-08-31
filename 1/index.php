@@ -2,9 +2,9 @@
 session_start();
 
 echo '<div style="width:30%;height:200px;">
-Flag 1: SQL Injection
+Flag 1 SQL Injection
 <br>
-Flag 2: OS Commanding
+Flag 2 OS Commanding
 </div>';
 //SQL Injection
 //OS Commanding
