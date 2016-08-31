@@ -1,4 +1,7 @@
 <?php
+echo '<div style="width:30%;height:200px;">
+Unvalidated Redirects and Forwards
+</div>';
 //Unvalidated Redirects and Forwards
 //www.banco.com/index.php?url=247.147.152.8/evil.html
 
