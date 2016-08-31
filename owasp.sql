@@ -37,7 +37,7 @@ CREATE TABLE IF NOT EXISTS `owasp_1_users` (
 --
 
 INSERT INTO `owasp_1_users` (`id`, `name`, `pass`) VALUES
-(1, 'admin', 'admiN');
+(1, 'admin', 'adminOWA$Padmin');
 
 -- --------------------------------------------------------
 
