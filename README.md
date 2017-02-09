@@ -6,7 +6,7 @@
 		git clone https://github.com/tutumcloud/lamp
 
 	RUN
-		docker build -no-cache -t tutum/lamp .
+		docker build --no-cache -t tutum/lamp .
 		service apache2 stop
 		service mysql stop
 		docker run -d -p 80:80 -p 3306:3306 tutum/lamp
