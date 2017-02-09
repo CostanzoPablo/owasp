@@ -1,7 +1,9 @@
 <?php
-echo '<div style="width:30%;height:200px;">
-Flag XSS
-</div>';
+if (!isset($_GET["data"])){
+	echo '<div style="width:30%;height:200px;">
+	Flag XSS
+	</div>';
+}
 //XSS
 	//permitir postear codigo y ese codigo tiene codigo JS que hace que las visitas sean redireccionadas
 include('../connect.php');
