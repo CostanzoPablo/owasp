@@ -20,7 +20,8 @@ if (!empty($_SERVER['HTTP_CLIENT_IP'])) {
 
 
 if (isset($_POST["comment"])){
-	$sql=("INSERT INTO owasp_3_comments (comment) VALUES ('$_POST[comment]')");
+	$comment = str_replace('<script', '', $_POST["comment"]);
+	$sql=("INSERT INTO owasp_3_comments (comment) VALUES ('$comment')");
 	if (!mysql_query($sql,$con)){
 		die('error');
 	}	
