@@ -12,7 +12,7 @@
 		#service mysql stop
 		cd ../owasp/pentest
 		docker build --no-cache -t costanzopablo/owasp .
-		docker run -d -p 80:80 -p 3306:3306 costanzopablo/owasp
+		docker run -d -p 80:80 -p 3306:3306 -it costanzopablo/owasp /bin/bash
 
 	TEST	
 		curl http://localhost/
