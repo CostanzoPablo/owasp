@@ -11,7 +11,7 @@
 		#service apache2 stop
 		#service mysql stop
 		cd ../owasp/pentest
-		docker build -t costanzopablo/owasp .
+		docker build --no-cache -t costanzopablo/owasp .
 		docker run -d -p 80:80 -p 3306:3306 costanzopablo/owasp
 
 	TEST	
