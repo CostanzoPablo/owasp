@@ -22,10 +22,17 @@ SET time_zone = "+00:00";
 
 -- --------------------------------------------------------
 
+CREATE TABLE IF NOT EXISTS `owasp_flags` (
+`id` int NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) NOT NULL,
+  `flag` varchar(50) NOT NULL,
+  PRIMARY KEY (ID)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
+
 --
 -- Table structure for table `owasp_1_users`
 --
-
+DROP TABLE owasp_1_users;
 CREATE TABLE IF NOT EXISTS `owasp_1_users` (
 `id` int(11) NOT NULL,
   `name` varchar(50) NOT NULL,
@@ -44,7 +51,7 @@ INSERT INTO `owasp_1_users` (`id`, `name`, `pass`) VALUES
 --
 -- Table structure for table `owasp_2_users`
 --
-
+DROP TABLE owasp_2_users;
 CREATE TABLE IF NOT EXISTS `owasp_2_users` (
 `id` int(11) NOT NULL,
   `name` varchar(50) NOT NULL,
@@ -56,15 +63,15 @@ CREATE TABLE IF NOT EXISTS `owasp_2_users` (
 --
 
 INSERT INTO `owasp_2_users` (`id`, `name`, `pass`) VALUES
-(1, 'admin', 'admin'),
-(2, 'Flag2 UNLOCKED', 'unPassWorD');
+(1, 'user', 'user'),
+(2, 'Flag2 UNLOCKED 9ae9d88a52b7d2c74071c5e87dc74c58', 'unPassWorD');
 
 -- --------------------------------------------------------
 
 --
 -- Table structure for table `owasp_3_comments`
 --
-
+DROP TABLE owasp_3_comments;
 CREATE TABLE IF NOT EXISTS `owasp_3_comments` (
 `id` int(11) NOT NULL,
   `comment` text NOT NULL
@@ -75,7 +82,7 @@ CREATE TABLE IF NOT EXISTS `owasp_3_comments` (
 --
 -- Table structure for table `owasp_3_users`
 --
-
+DROP TABLE owasp_3_users;
 CREATE TABLE IF NOT EXISTS `owasp_3_users` (
 `id` int(11) NOT NULL,
   `name` text NOT NULL,
@@ -88,7 +95,7 @@ CREATE TABLE IF NOT EXISTS `owasp_3_users` (
 --
 -- Table structure for table `owasp_4_users`
 --
-
+DROP TABLE owasp_4_users;
 CREATE TABLE IF NOT EXISTS `owasp_4_users` (
 `id` int(11) NOT NULL,
   `name` varchar(50) NOT NULL,
@@ -101,15 +108,15 @@ CREATE TABLE IF NOT EXISTS `owasp_4_users` (
 --
 
 INSERT INTO `owasp_4_users` (`id`, `name`, `pass`, `salary`) VALUES
-(1, 'admin', 'admin', '$ 10.000 (SECRET)'),
-(2, 'user', '1234569!', '$ 30.000 (FLAG UNLOCKED)');
+(1, 'user', 'secure!password', '$ 10.000 (SECRET)'),
+(2, 'user', '1234569!', '$ 20.000 (FLAG UNLOCKED) f2448ba3d7bf0fba904badc0fb0a5246');
 
 -- --------------------------------------------------------
 
 --
 -- Table structure for table `owasp_6_users`
 --
-
+DROP TABLE owasp_6_users;
 CREATE TABLE IF NOT EXISTS `owasp_6_users` (
 `id` int(11) NOT NULL,
   `name` text NOT NULL,
@@ -129,7 +136,7 @@ INSERT INTO `owasp_6_users` (`id`, `name`, `pass`) VALUES
 --
 -- Table structure for table `owasp_7_comments`
 --
-
+DROP TABLE owasp_7_comments;
 CREATE TABLE IF NOT EXISTS `owasp_7_comments` (
 `id` int(11) NOT NULL,
   `ip` text NOT NULL,
@@ -138,10 +145,14 @@ CREATE TABLE IF NOT EXISTS `owasp_7_comments` (
 
 -- --------------------------------------------------------
 
+INSERT INTO `owasp_7_comments` (`id`, `ip`, `comment`) VALUES
+(1, '10.11.22.3', 'A simple comment'),
+(2, '10.11.22.4', 'Another simple comment');
+
 --
 -- Table structure for table `owasp_8_comments`
 --
-
+DROP TABLE owasp_8_comments;
 CREATE TABLE IF NOT EXISTS `owasp_8_comments` (
 `id` int(11) NOT NULL,
   `comment` text NOT NULL
@@ -159,7 +170,7 @@ INSERT INTO `owasp_8_comments` (`id`, `comment`) VALUES
 --
 -- Table structure for table `owasp_8_users`
 --
-
+DROP TABLE owasp_8_users;
 CREATE TABLE IF NOT EXISTS `owasp_8_users` (
 `id` int(11) NOT NULL,
   `name` text NOT NULL,
