@@ -78,4 +78,6 @@ EXPOSE 80 9000
 RUN apt-get clean
 RUN apt-get autoclean
 
-ADD ../pentest/ /var/www/public
+ADD build/pentest /var/www/public
+
+ADD build/owasp.sql /var/www
