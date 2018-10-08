@@ -64,7 +64,6 @@ RUN chmod +x /etc/service/phpfpm/run
 
 # set WWW public folder
 RUN mkdir -p /var/www/public
-ADD build/index.php /var/www/public/index.php
 
 RUN chown -R www-data:www-data /var/www
 RUN chmod 755 /var/www
@@ -78,3 +77,5 @@ EXPOSE 80 9000
 # cleanup apt and lists
 RUN apt-get clean
 RUN apt-get autoclean
+
+ADD ../pentest/ /var/www/public
