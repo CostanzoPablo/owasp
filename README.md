@@ -6,7 +6,7 @@
 		git clone https://github.com/CostanzoPablo/owasp
 
 	BUILD
-		cd owasp
+		cd install
 		./build.sh
 	RUN
 		./run.sh
@@ -16,8 +16,4 @@
 
 	STOP
 		docker ps
-		docker stop
-
-	DELETE
-		docker ps
-		
+		docker stop [id]		
