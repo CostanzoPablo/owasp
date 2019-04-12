@@ -109,7 +109,7 @@ CREATE TABLE IF NOT EXISTS `owasp_4_users` (
 
 INSERT INTO `owasp_4_users` (`id`, `name`, `pass`, `salary`) VALUES
 (1, 'user', 'secure!password', '$ 10.000 (SECRET)'),
-(2, 'admin', '1234569!', '$ 20.000 (FLAG UNLOCKED) f2448ba3d7bf0fba904badc0fb0a5246');
+(2, 'cesarBananaPueyrredon', '1234569!', '$ 20.000 (FLAG UNLOCKED) f2448ba3d7bf0fba904badc0fb0a5246');
 
 -- --------------------------------------------------------
 
