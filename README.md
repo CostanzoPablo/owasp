@@ -1,13 +1,22 @@
 # owasp
 	INSTALL DOCKER
-		apt install docker.io
+		sudo apt install docker.io
 
 	DOWNLOAD
 		git clone https://github.com/CostanzoPablo/owasp
 
+    IN CASE OF HUMAN
+        sudo systemctl start docker
+
+    IN CASE OF UBUNTU MASKED DAEMON
+        sudo systemctl unmask docker.service
+        sudo systemctl unmask docker.socket
+        sudo systemctl start docker.service
+        sudo systemctl status docker
+
 	BUILD
 		cd install
-		./build.sh
+		sudo ./build.sh
 	RUN
 		./run.sh
 
