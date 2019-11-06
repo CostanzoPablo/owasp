@@ -17,7 +17,7 @@ CMD ["/sbin/my_init"]
 
 # nginx-php installation
 RUN DEBIAN_FRONTEND="noninteractive" apt-get update
-RUN DEBIAN_FRONTEND="noninteractive" apt-get -y upgrade
+#RUN DEBIAN_FRONTEND="noninteractive" apt-get -y upgrade
 RUN DEBIAN_FRONTEND="noninteractive" apt-get update --fix-missing
 RUN DEBIAN_FRONTEND="noninteractive" apt-get -y install php7.0
 RUN DEBIAN_FRONTEND="noninteractive" apt-get -y install php7.0-fpm php7.0-common php7.0-cli php7.0-mysqlnd php7.0-mcrypt php7.0-curl php7.0-bcmath php7.0-mbstring php7.0-soap php7.0-xml php7.0-zip php7.0-json php7.0-imap php-xdebug php-pgsql
