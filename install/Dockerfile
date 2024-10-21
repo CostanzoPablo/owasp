@@ -1,5 +1,4 @@
-FROM phusion/baseimage
-MAINTAINER Thiago Taranto <ttaranto@gmail.com>
+FROM phusion/baseimage:jammy-1.0.4 
 
 # ensure UTF-8
 RUN locale-gen en_US.UTF-8
@@ -16,6 +15,7 @@ RUN /etc/my_init.d/00_regen_ssh_host_keys.sh
 CMD ["/sbin/my_init"]
 
 # nginx-php installation
+RUN DEBIAN_FRONTEND="noninteractive" add-apt-repository ppa:ondrej/php
 RUN DEBIAN_FRONTEND="noninteractive" apt-get update
 #RUN DEBIAN_FRONTEND="noninteractive" apt-get -y upgrade
 RUN DEBIAN_FRONTEND="noninteractive" apt-get update --fix-missing
